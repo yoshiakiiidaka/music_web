@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*--フォント--*/
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+@media (min-width: 640px) {
+  header {
+    width: 100%;
+    height: 840px;
+    background-image: url("../images/pc/header_img.jpg");
+    background-size: cover;
+    background-position: center center; }
+    header #logo_pc {
+      text-align: center;
+      padding: 325px 0px 200px;
+      margin: 0; }
+    header #works_profile_pc {
+      display: flex;
+      padding-top: 125px; }
+      header #works_profile_pc .works_button {
+        text-align: center;
+        width: 40%;
+        margin-right: 10%; }
+        header #works_profile_pc .works_button a {
+          border: 2px solid #f7a42e;
+          border-radius: 10px;
+          padding: 20px 20px 10px; }
+        header #works_profile_pc .works_button a:hover {
+          background: rgba(255, 164, 44, 0.5); }
+        header #works_profile_pc .works_button a:active {
+          background-color: #f7a42e; }
+      header #works_profile_pc .profile_button {
+        text-align: center;
+        width: 40%;
+        margin-left: 10%; }
+        header #works_profile_pc .profile_button a {
+          border: 2px solid #1cd909;
+          border-radius: 10px;
+          padding: 20px 15px 10px; }
+        header #works_profile_pc .profile_button a:hover {
+          background: rgba(28, 217, 9, 0.5); }
+        header #works_profile_pc .profile_button a:active {
+          background-color: #1cd909; }
+    header #logo_sp {
+      display: none; }
+    header #works_profile_sp {
+      display: none; } }
+@media (max-width: 639px) {
+  header {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/pc/header_img.jpg");
+    background-size: cover;
+    background-position: center center; }
+    header #logo_pc {
+      display: none; }
+    header #works_profile_pc {
+      display: none; }
+    header #logo_sp {
+      text-align: center;
+      padding-top: 100px;
+      margin: 0; }
+    header #works_profile_sp {
+      display: flex;
+      padding-top: 100px; }
+      header #works_profile_sp .works_button {
+        text-align: center;
+        width: 40%;
+        margin-right: 10%; }
+        header #works_profile_sp .works_button a {
+          border: 2px solid #f7a42e;
+          border-radius: 10px;
+          padding: 15px 10px 8px; }
+        header #works_profile_sp .works_button a:active {
+          background-color: #f7a42e; }
+      header #works_profile_sp .profile_button {
+        text-align: center;
+        width: 40%;
+        margin-left: 10%; }
+        header #works_profile_sp .profile_button a {
+          border: 2px solid #1cd909;
+          border-radius: 10px;
+          padding: 15px 10px 8px; }
+        header #works_profile_sp .profile_button a:active {
+          background-color: #1cd909; } }
+#works {
+  background-color: #fffffb;
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0px 150px; }
+  @media (max-width: 639px) {
+    #works {
+      flex-direction: column;
+      padding-bottom: 80px; } }
+  #works .content {
+    margin: 50px 0px 0px; }
+    #works .content .title {
+      text-align: center; }
+    #works .content a {
+      text-decoration: none; }
+    #works .content .shops {
+      background-image: url("../images/pc/SHOPSSS.png"); }
+    #works .content .corporate {
+      background-image: url("../images/pc/corporate.jpg"); }
+    #works .content .movie {
+      background-image: url("../images/pc/movie.jpg"); }
+    #works .content .sound {
+      background-image: url("../images/pc/SoundCloud.jpg"); }
+    #works .content .logo {
+      background-image: url("../images/pc/FLAGGED_logo.png"); }
+    #works .content .jacket {
+      background-image: url("../images/pc/jacket.jpg"); }
+    @media (min-width: 640px) {
+      #works .content .box {
+        height: 275px;
+        width: 275px;
+        margin-top: 50px;
+        text-align: center;
+        background-size: cover;
+        background-position: center center; }
+        #works .content .box .text_pc {
+          color: #ffffff;
+          background: rgba(57, 58, 55, 0.8);
+          height: 80%;
+          padding-top: 20%;
+          display: none; }
+          #works .content .box .text_pc p {
+            padding-top: 20px;
+            font-size: 15px;
+            font-size: 1.5rem; }
+      #works .content a:hover .text_pc {
+        display: block; }
+      #works .content a:active .text_pc {
+        background-color: #63656a; } }
+    @media (max-width: 639px) {
+      #works .content .box {
+        height: 275px;
+        width: 275px;
+        margin: 25px auto 0;
+        text-align: center;
+        background-size: cover;
+        background-position: center center; }
+        #works .content .box .text_pc {
+          display: none; } }
+    @media (min-width: 640px) {
+      #works .content .text_sp {
+        display: none; } }
+    @media (max-width: 639px) {
+      #works .content .text_sp {
+        text-align: center;
+        padding-top: 10px; }
+        #works .content .text_sp p {
+          display: inline-block;
+          text-align: center;
+          width: 65%;
+          font-size: 15px;
+          font-size: 1.5rem;
+          margin-bottom: 0px; } }
+
+@media (min-width: 640px) {
+  #profile {
+    display: flex;
+    font-size: 14px;
+    font-size: 1.4rem;
+    height: 600px; }
+    #profile .profile_img {
+      width: 50%;
+      height: 100%;
+      margin-right: 10px;
+      background-image: url("../images/pc/Profile_img.jpg");
+      background-size: cover; }
+    #profile #profile_text {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between; }
+      #profile #profile_text .name {
+        font-size: 18px;
+        font-size: 1.8rem;
+        padding: 30px 0px 25px;
+        font-family: Rajdhani; }
+      #profile #profile_text p {
+        width: 80%; }
+    #profile #skill_soft {
+      display: flex;
+      margin: 40px 0px 30px; }
+      #profile #skill_soft .skill {
+        width: 40%; }
+      #profile #skill_soft ul {
+        padding-left: 0;
+        margin-top: 0;
+        font-family: Rajdhani;
+        list-style: none;
+        font-size: 16px;
+        font-size: 1.6rem; }
+    #profile #contact ul {
+      display: flex;
+      padding-left: 0;
+      font-family: Rajdhani; }
+      #profile #contact ul li {
+        font-size: 24px;
+        font-size: 2.4rem;
+        width: 30%;
+        list-style: none; }
+        #profile #contact ul li a {
+          text-decoration: none;
+          color: #63656a; }
+        #profile #contact ul li a:hover {
+          text-decoration: underline; }
+        #profile #contact ul li a:active {
+          color: #ffffff; }
+    #profile #copy_right {
+      margin-top: 50px;
+      color: #63656a;
+      text-align: right;
+      width: 80%; } }
+@media (max-width: 639px) {
+  #profile {
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #profile .profile_img {
+      height: 400px;
+      width: 95%;
+      margin: 10px auto;
+      background-image: url("../images/pc/Profile_img.jpg");
+      background-size: cover; }
+    #profile #profile_text {
+      text-align: center; }
+      #profile #profile_text .name {
+        font-size: 18px;
+        font-size: 1.8rem;
+        padding: 30px 0px 25px;
+        font-family: Rajdhani; }
+      #profile #profile_text p {
+        width: 90%;
+        margin: 0 auto; }
+    #profile #skill_soft {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0px 30px;
+      text-align: left; }
+      #profile #skill_soft ul {
+        padding-left: 0;
+        margin-top: 0;
+        font-family: Rajdhani;
+        list-style: none;
+        font-size: 16px;
+        font-size: 1.6rem; }
+    #profile #contact ul {
+      display: flex;
+      padding-left: 0;
+      margin: 40px 0px;
+      font-family: Rajdhani; }
+      #profile #contact ul li {
+        font-size: 24px;
+        font-size: 2.4rem;
+        width: 30%;
+        list-style: none; }
+        #profile #contact ul li a {
+          text-decoration: none;
+          color: #63656a; }
+    #profile #copy_right {
+      margin-top: 50px;
+      color: #63656a; } }
+
+/*# sourceMappingURL=port.css.map */
